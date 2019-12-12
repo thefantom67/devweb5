@@ -1,0 +1,33 @@
+[
+    {"nom":"Hotel Strasbourg","prix":"123€",
+    "img":"https://image.noelshack.com/fichiers/2019/43/6/1572123835-1.jpeg", 
+    "desc":"Super Hotel sur Strasbourg ! Situé devant la cathédrale, une vue magnifique pour un prix mini"},
+
+    {"nom":"Villa Paris","prix":"150€",
+    "img":"https://image.noelshack.com/fichiers/2019/43/6/1572124332-6.jpeg",
+    "desc":"Villa 9m2 pour etudiant ! Et oui à ce prix là tu t'attendais à quoi ?"},
+
+    {"nom":"Hotel Bordeaux","prix":"90€",
+    "img":"https://image.noelshack.com/fichiers/2019/43/6/1572123834-2.jpeg",
+    "desc":"Hotel sans prétention sur Bordeaux ! Simple, efficace et pas chère c'est Bordeaux que je préfère."},
+
+    {"nom":"Hotel Bresil","prix":"250€",
+    "img":"https://image.noelshack.com/fichiers/2019/43/6/1572123834-3.jpeg",
+    "desc":"Hotel no Brasil com comida Braziliero !"},
+
+    {"nom":"Logement Budapest","prix":"70€",
+    "img":"https://image.noelshack.com/fichiers/2019/43/6/1572123835-5.jpeg",
+    "desc":"Même prix que dans les maisons closes donc offre à ne pas louper !"},
+
+    {"nom":"Chateau Haut-Koenigsbourg","prix":"5000€",
+    "img":"https://image.noelshack.com/fichiers/2019/43/6/1572124332-8.jpeg",
+    "desc":"Chateau le plus visité d'Alsace ! Attention, il fait un peu froid la nuit et y a pas mal de toursite chinois"},
+
+    {"nom":"Villa Madrid","prix":"1500€",
+    "img":"https://image.noelshack.com/fichiers/2019/43/6/1572123835-4.jpeg",
+    "desc":"Paela, chorizo, pas le temps de niezer ! Vu sur un toreau géant, surement le symbole de l'Espagne !"},
+
+    {"nom":"Logement Neuhof","prix":"10€",
+    "img":"https://image.noelshack.com/fichiers/2019/43/6/1572124332-7.jpeg",
+    "desc":"Attention l'ascenseur est en panne poto ! Et fait attention à Paulette du 4ème, elle est fragile psycologiquement !"}
+]

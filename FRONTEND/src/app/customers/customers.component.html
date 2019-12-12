@@ -1,0 +1,2 @@
+<app-formulaire *ngIf="!formValidated" (formValidated)="onFormValidated($event)"></app-formulaire>
+<app-recap *ngIf="formValidated" [data]="data"></app-recap>

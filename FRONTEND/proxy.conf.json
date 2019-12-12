@@ -1,0 +1,6 @@
+{ "/api":
+
+{ "target": "http://node13.codenvy.io:37094/",
+"secure": false }
+
+}

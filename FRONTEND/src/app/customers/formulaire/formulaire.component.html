@@ -1,0 +1,59 @@
+<h1 align="center">Création d'un compte !</h1>
+
+<div class="container">
+<div class="row">
+<div class="col-md-8">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()" id="monFormulaire" method="post">
+                <p>
+            <label for="nom">Nom :</label><br />
+            <input formControlName="nom" type="text" name="nom" id="nom" required/>
+            <br />
+            <label for="prenom">Prénom :</label><br />
+            <input formControlName="prenom" type="text" name="prenom" id="prenom" required/>
+       
+            <br />
+            <label for="adresse">Adresse :</label><br />
+            <input formControlName="adresse" type="text" name="adresse" id="adresse" required/>
+       
+            <br />
+            <label for="cp">Code postal :</label><br />
+            <input formControlName="cp" type="text" name="cp" id="cp"required/>
+       
+            <br />
+            <label for="ville">Ville :</label><br />
+            <input formControlName="ville" type="text" name="ville" id="ville" required/>
+       
+            <br />
+            <label for="tel">Téléphone :</label><br required/>
+            <input formControlName="tel" id="tel" [appError]="getValidationTel ()" [(ngModel)]="tel">
+
+       
+            <br />
+            <label for="email">Email :</label><br required/>
+            <input formControlName="email" type="text" name="email" id="email" />
+            
+            <br />
+            <label for="civilité">Civilité :</label><br required/>
+            <input formControlName="civ" type="text" name="civ" id="civ" />
+
+            <br />
+            <br />
+            <label for="password">Mot de passe :</label><br required/>
+            <input formControlName="password" type="password" name="password" id="password" />
+       
+            <br />
+            <label for="login">Identifiant :</label><br required/>
+            <input formControlName="login" type="text" name="login" id="username" /><br />
+
+            <br />
+            <label for="pays">Pays :</label><br required/>
+            <input formControlName="pays" type="text" name="pays" id="pays" />
+            
+            <br />
+            <button class="btn waves-effect waves-light" type="submit">Envoyer</button>
+            
+            </p>
+        </form>
+</div>
+</div>
+</div>

@@ -1,0 +1,15 @@
+[
+    {
+        "prenom":"Bruno",
+        "nom":"MALVY",
+        "adresse":"rue strasbourg",
+        "cp":"67000",
+        "ville":"STRASBOURG",
+        "tel":"0612345678",
+        "email":"brunomalvy@yahoo.fr",
+        "civ":"Homme",
+        "login":"test",
+        "password":"1234",
+        "pays":"France"
+    }
+]
