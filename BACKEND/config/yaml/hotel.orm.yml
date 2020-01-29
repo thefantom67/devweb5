@@ -1,0 +1,29 @@
+# Doctrine.Tests.ORM.Mapping.User.dcm.yml
+Doctrine\Tests\ORM\Mapping\User:
+  type: entity
+  repositoryClass: Doctrine\Tests\ORM\Mapping\UserRepository
+  table: hotel
+  schema: schema_name # The schema the table lies in, for platforms that support schemas (Optional, >= 2.5)
+  readOnly: true
+  indexes:
+    name_index:
+      columns: [ nom ]
+  id:
+    id:
+      type: integer
+      generator:
+        strategy: AUTO
+  fields:
+    nom:
+      type: string
+      length: 50
+    prix:
+      type: int
+      length: 50
+    img:
+      type: string
+      length: 100
+    desc:
+      type: int
+      length: 100
+  

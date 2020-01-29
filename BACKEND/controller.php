@@ -4,6 +4,7 @@ use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
 use \Firebase\JWT\JWT;
 
+require 'bootstrap.php';
 require 'vendor/autoload.php';
 
 $app = new \Slim\App();
@@ -39,26 +40,26 @@ $app->get('/{name}',function ($resquest,$response,$args)
 
 function addUser($request, $response, $args)
 {
-    $body = $request->getParsedBody();
-    $civ = $body['civ'];
-    $prenom = $body['prenom'];
-    $nom = $body['nom'];
-    $adresse = $body['adresse'];   
-    $cp = $body['cp'];
-    $ville = $body['ville'];
-    $pays = $body['pays'];
-    $tel = $body['tel']; 
-    $email = $body['email']; 
-    $login = $body['login']; 
-    $password = hash('sha256', $body['password']); 
-       
-    $file = 'res/users.json';
-    $user = new User($civ, $prenom, $nom, $adresse, $cp, $ville, $pays, $tel, $email, $login, $password);
+   global $entityManager;
+
+   $userRepository = $entityManager->getRepository('Users');
+   $users = $userRepository->findAll();
     
-    return $response->write(json_encode($user));
+    return $response->write(json_encode($users));
 
-   }
+}
+function getHotel($request, $response, $args)
+{
+   $nom = $args['nom'];
 
+   global $entityManager;
+
+   $hotelRepository = $entityManager->getRepository('Hotels');
+   $hotels = $userRepository->findOnByNom($nom);
+    
+    return $response->write(json_encode($hotels));
+
+}
 
 $app->run();
 
