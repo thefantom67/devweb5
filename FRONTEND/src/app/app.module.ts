@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SwipeService } from './services/swipe.service';
 import { AccueilComponent } from './accueil/accueil.component';
 import { PanierState } from '../../shared/stats/panier-state';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [

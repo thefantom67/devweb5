@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  backendHotel : 'http://localhost/controller.php/'
+  backendHotel : 'http://localhost/catalogue-list/'
 };
 
 /*

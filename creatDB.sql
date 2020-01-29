@@ -28,8 +28,8 @@ CREATE TABLE `hotel` (
 );
 
 INSERT INTO user VALUES (NULL,"bruno","MALVY","TEST avenue TEST",67000,"STRASBOURG","+33623456789","test@gmail.com","H","bruno.malvy","1234","FRANCE");
-INSERT INTO user VALUES (NULL,"bruno","MALVY","TEST avenue TEST",67000,"STRASBOURG","+33623456789","test@gmail.com","H","bruno.malvy","1234","FRANCE");
-INSERT INTO user VALUES (NULL,"bruno","MALVY","TEST avenue TEST",67000,"STRASBOURG","+33623456789","test@gmail.com","H","bruno.malvy","1234","FRANCE");
+INSERT INTO user VALUES (NULL,"toto","toto","TEST avenue TEST",67000,"STRASBOURG","+33623456789","test@gmail.com","H","toto.toto","1234","FRANCE");
+INSERT INTO user VALUES (NULL,"titi","titi","TEST avenue TEST",67000,"STRASBOURG","+33623456789","test@gmail.com","H","toto.toto","1234","FRANCE");
 
 INSERT INTO hotel VALUES (NULL,"Hotel Strasbourg",123,"https://image.noelshack.com/fichiers/2019/43/6/1572123835-1.jpeg","Super Hotel sur Strasbourg ! Situé devant la cathédrale, une vue magnifique pour un prix mini");
 INSERT INTO hotel VALUES (NULL,"Hotel Strasbourg",123,"https://image.noelshack.com/fichiers/2019/43/6/1572123835-1.jpeg","Super Hotel sur Strasbourg ! Situé devant la cathédrale, une vue magnifique pour un prix mini");

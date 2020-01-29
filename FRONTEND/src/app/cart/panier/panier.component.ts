@@ -25,5 +25,9 @@ export class PanierComponent implements OnInit {
   
   ngOnInit() {
   }
+  onPay(){
+    alert("Votre réservation à bien été enregistrée ! Vous allez être redirigé vers l'accueil");
+    window.location.href='http://localhost:4200/';
+  }
 
 }

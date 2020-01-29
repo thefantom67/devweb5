@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: 'customer-list', loadChildren: () => import('./customers/customers.module').then(m => m.CustomersModule) },
   { path: 'catalogue-list', loadChildren: () => import('./catalogue/catalogue.module').then(m => m.CatalogueModule) },
   { path: 'catalogue-list/info-list', loadChildren: () => import('./info/info.module').then(m => m.InfoModule) },
+  { path: 'login-list', loadChildren: () => import('./login/login.module').then(m => m.LoginModule) },
   { path: 'cart-list', loadChildren: () => import('./cart/cart.module').then(m => m.CartModule) }
 ];
 
