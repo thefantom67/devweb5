@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  backendHotel : 'http://node13.codenvy.io:37094/DevWebCNAM/index.php/hotels'
+  backendHotel : 'http://localhost/controller.php/'
 };
 
 /*
