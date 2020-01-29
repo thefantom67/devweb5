@@ -27,18 +27,16 @@ return $response->withHeader("Content-Type", "application/json")->getBody()->wri
 
 $app->add($jwt);
 
-$app->get('/{name}',function ($resquest,$response,$args)
- {
-    $url="hotels.json";
-    $hotel=file_get_contents($url);
-    
-    return $response->write($hotel)
-                    ->withHeader('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type, Accept, Origin, Authorization')
-                    ->withHeader("Access-Control-Allow-Origin", "*")
-                    ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
-});
 
-function addUser($request, $response, $args)
+header('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type, Accept, Origin, Authorization');
+header("Access-Control-Allow-Origin", "*");
+header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
+header('Content-Type: application/json');
+
+$app->get('/catalogue-list/client', 'AddUsers');
+$app->get('/catalogue-list/hotel', 'GetHotel');
+
+function AddUsers ($request, $response, $args)
 {
    global $entityManager;
 
@@ -47,8 +45,9 @@ function addUser($request, $response, $args)
     
     return $response->write(json_encode($users));
 
-}
-function getHotel($request, $response, $args)
+};
+
+function GetHotel($request, $response, $args)
 {
    $nom = $args['nom'];
 
@@ -59,7 +58,7 @@ function getHotel($request, $response, $args)
     
     return $response->write(json_encode($hotels));
 
-}
+};
 
 $app->run();
 
