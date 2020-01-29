@@ -4,7 +4,7 @@ Voici mon projet Web.
 Celui-ci est basé sur la location d'appartement ou d'hôtel dans le monde !
 
 Ce projet à été mis en place avec un FRONT en Angular et un BACK en PHP.
-  Le BACK fonctionne avec un serveur web MAMP (équivalant à WAMP/LAMP).
+Le BACK fonctionne avec un serveur web MAMP (équivalant à WAMP/LAMP).
 
 Il est composer de Apache2-MySQL-PhpMyAdmin-PHP5.6-COMPOSER-DOCTRINE-SLIM-JWT
 Il vous faudra impérativement installer ceci pour que mon programme puisse fonctionner !!
